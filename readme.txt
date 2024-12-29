@@ -1,9 +1,9 @@
 === Beaumont ===
 Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Requires at least: 6.0
+Requires at least: 6.1
 Requires PHP: 5.6
-Tested up to: 6.0
+Tested up to: 6.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Installation ==
 
-1. Make sure you're running WordPress 6.0 or later.
+1. Make sure you're running WordPress 6.1 or later.
 2. Upload the theme.
 3. Activate the theme.
 
@@ -37,6 +37,43 @@ Source: https://svgsilh.com/image/1299051.html
 
 
 == Changelog ==
+
+Version 0.2.5 (2024-05-03)
+-------------------------
+- Updated stylesheet enqueue to make sure the parent theme stylesheet is loaded even when a child theme is active.
+
+Version 0.2.4 (2024-03-04)
+-------------------------
+- Changed the Site Title block in the header to a paragraph element, to avoid having duplicate H1 elements on pages. Props: @tombie
+- Updated the demo site URL in the theme description.
+- Bumped "Tested up to" to 6.4.
+- Bumped copyright year in the footer to 2024.
+
+Version 0.2.3 (2023-08-21)
+-------------------------
+- Border block: Fixed the Diamond block style in 6.3.
+- Removed opt-in of the opinionated wp-block-styles, since it causes issues with pull quote styles in 6.3.
+- Updated styles to account for removal of wp-block-styles.
+
+Version 0.2.2 (2023-02-13)
+-------------------------
+- Fixed the Pull Quote block cite styles.
+
+Version 0.2.1 (2023-02-10)
+-------------------------
+- Site Title block: Updated the link to be underlined on hover.
+
+Version 0.2 (2023-02-09)
+-------------------------
+- Added WordPress 6.1 support.
+	- Theme.json: Added spacingSizes.
+	- Theme.json: Added element styles for button, heading, caption, and link, and removed the CSS it replaces.
+	- Enabled fluid font sizes in theme.json.
+	- Enabled useRootPaddingAwareAlignments in theme.json, and removed custom alignment styles in CSS.
+	- Enabled blockGap in theme.json.
+- Reordered theme.json alphabetically.
+- Removed some custom styles for the search form and tables from style.css.
+- Bumped copyright year in the footer to 2023.
 
 Version 0.1.8 (2022-10-07)
 -------------------------
